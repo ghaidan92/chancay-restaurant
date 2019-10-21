@@ -140,8 +140,20 @@ img {
     justify-content: space-evenly;
 }
 
+.about,
+.menu,
+.location,
+.footer {
+    width: 85%;
+    margin-left: 4rem;
+}
+
 .about {
     grid-area: about;
+}
+
+.story>img {
+    float: right;
 }
 
 .menu {
@@ -150,6 +162,26 @@ img {
 
 .location {
     grid-area: location;
+}
+
+.lo {
+    display: grid;
+    grid-template-areas: 'map map address address';
+    grid-gap: 5px;
+    padding: 5px 10px;
+}
+
+#map {
+    height: 350px;
+    width: 100%;
+}
+
+.map {
+    grid-area: map
+}
+
+.address {
+    grid-area: address
 }
 
 .footer {
