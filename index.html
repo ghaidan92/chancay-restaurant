@@ -12,39 +12,51 @@
 
 <body>
     <div class="grid-container">
-        <div class="header">
-            <img id="logo" src="./images/FacebookCover.png" alt="logo">
-            <ul class="nav">
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
-                <li>Location</li>
-            </ul>
+        <div class="main-header">
+            <div class="top-container">
+                <img id="logo" src="./images/FacebookCover.png" alt="logo">
+            </div>
+
+            <div class="header" id="myHeader">
+                <ul class="nav">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Location</li>
+                </ul>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/dinner.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/lunch.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/flan.JPG" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)" style="left: 0;">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
         <div class="about">About</div>
         <div class="menu">menu</div>
         <div class="location">location</div>
-        <div class="footer">footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa cupiditate ut quas provident quibusdam vitae debitis voluptatibus illo officiis incidunt sit quae magni rem aut mollitia, saepe iste? Libero. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Fuga maiores pariatur blanditiis expedita ipsum amet et ipsam molestias incidunt perferendis ea, culpa odio obcaecati tempora quae nulla atque praesentium doloremque. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Aspernatur, tempora error nemo debitis, quisquam magni voluptas at reprehenderit consequatur repellat totam maxime impedit perferendis ducimus fugit atque ullam laborum sequi.</div>
+        <div class="footer">footer</div>
     </div>
 </body>
-
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-</script>
+<script src="app.js"></script>
 
 </html>
