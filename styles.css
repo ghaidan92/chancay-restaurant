@@ -152,6 +152,21 @@ img {
     grid-area: about;
 }
 
+.story {
+    display: grid;
+    grid-template-areas: 'story-text story-img story-img story-img';
+    grid-gap: 30px;
+}
+
+.story-text {
+    grid-area: story-text;
+    text-align: justify;
+}
+
+.story-img {
+    grid-area: story-img
+}
+
 .story>img {
     float: right;
 }
