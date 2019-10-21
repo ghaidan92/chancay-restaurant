@@ -164,10 +164,18 @@ img {
     grid-area: location;
 }
 
+.loc {
+    grid-area: loc
+}
+
+.add {
+    grid-area: add
+}
+
 .lo {
     display: grid;
-    grid-template-areas: 'map map address address';
-    grid-gap: 5px;
+    grid-template-areas: 'loc loc loc add' 'map map map reservation' 'address address address reservation';
+    grid-gap: 20px;
     padding: 5px 10px;
 }
 
@@ -181,7 +189,16 @@ img {
 }
 
 .address {
-    grid-area: address
+    grid-area: address;
+}
+
+.reservation {
+    grid-area: reservation;
+}
+
+.form {
+    text-align: start;
+    line-height: 2.5;
 }
 
 .footer {
