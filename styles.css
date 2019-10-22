@@ -131,6 +131,8 @@ img {
 .header {
     background-color: #DCDCDC;
     z-index: 1;
+    width: 94%;
+    /* box-shadow: 2px 5px #888888; */
 }
 
 .sticky {
@@ -160,12 +162,14 @@ img {
 .story {
     display: grid;
     grid-template-areas: 'story-text story-img story-img story-img';
-    grid-gap: 30px;
+    grid-gap: 25px;
 }
 
 .story-text {
     grid-area: story-text;
     text-align: justify;
+    font-size: 25px;
+    margin: 4rem;
 }
 
 .story-img {
@@ -175,6 +179,45 @@ img {
 .story>img {
     float: right;
 }
+
+
+/* menu tabs */
+
+.tablink {
+    background-color: transparent;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Dinner,
+#Lunch,
+#Dessert,
+#Catering {
+    background-color: transparent;
+}
+
+
+/*  */
 
 .menu {
     grid-area: menu;
@@ -217,7 +260,7 @@ img {
 }
 
 .form {
-    text-align: start;
+    text-align: justify;
     line-height: 2;
 }
 

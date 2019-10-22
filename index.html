@@ -55,13 +55,38 @@
             <p>Restaurant</p>
             <hr>
             <div class="story">
-                <div class="story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nisi cupiditate ipsam debitis, molestiae libero amet. Nam hic, explicabo amet a eos aut ab quas blanditiis dolor laudantium nihil possimus. .Lorem ipsum dolor sit amet
+                <div class="story-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nisi cupiditate ipsam debitis, molestiae libero amet. Nam hic, explicabo amet a eos aut ab quas blanditiis dolor laudantium nihil possimus. Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Id nihil impedit molestias et! Cupiditate quis, alias error amet maxime excepturi iure quisquam accusamus temporibus sit exercitationem, aliquid vel repellendus ut.
                 </div>
                 <div class="story-img"><img src="./images/inside-img.jpg" alt=""> </div>
             </div>
         </div>
-        <div class="menu">menu</div>
+        <div class="menu">
+            <button class="tablink" onclick="openPage('Dinner', this)">Dinner</button>
+            <button class="tablink" onclick="openPage('Lunch', this)" id="defaultOpen">Lunch</button>
+            <button class="tablink" onclick="openPage('Dessert', this)">Dessert</button>
+            <button class="tablink" onclick="openPage('Catering', this)">Catering</button>
+
+            <div id="Dinner" class="tabcontent">
+                <h3>Dinner</h3>
+                <p>Dinner is where the heart is..</p>
+            </div>
+
+            <div id="Lunch" class="tabcontent">
+                <h3>Lunch</h3>
+                <p>Some Lunch this fine day!</p>
+            </div>
+
+            <div id="Dessert" class="tabcontent">
+                <h3>Dessert</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div>
+
+            <div id="Catering" class="tabcontent">
+                <h3>Catering</h3>
+                <p>Who we are and what we do.</p>
+            </div>
+        </div>
         <div class="location lo">
             <div class="loc">location
                 <hr>
@@ -76,10 +101,10 @@
                     Full name: <input type="text" name="fullname" placeholder="John Smith" required>
                     <br> E-mail address: <input type="text" name="email" placeholder="youremail@email.com" required>
                     <br> Phone number: <input type="text" name="phone" placeholder="415-123-4567" required>
-                    <br> Number of people: <input type="text" name="numpeople" placeholder="4">
-                    <br> Day of reservation: <input type="date" name="day">
-                    <br> Time of reservation: <input type="time" name="time">
-                    <br> Notes: <textarea name="notes" rows="1" placeholder="Special notes"></textarea>
+                    <br> Number of people: <input type="text" name="numpeople" placeholder="4" required>
+                    <br> Day of reservation: <input type="date" name="day" required>
+                    <br> Time of reservation: <input type="time" name="time" required>
+                    <br> Notes: <textarea name="notes" rows="1" placeholder="Optional"></textarea>
                     <br> <input type="submit" value="Send Reservation">
                 </form>
             </div>
