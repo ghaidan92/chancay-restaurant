@@ -1,8 +1,14 @@
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    font-family: 'Raleway', sans-serif;
+}
+
 .grid-container {
     display: grid;
     grid-template-areas: 'header header header header ' 'about about about about ' 'menu menu menu menu' 'location location location location ' 'footer footer footer footer';
     grid-gap: 10px;
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
     padding: 10px;
 }
 
@@ -113,7 +119,7 @@ img {
 }
 
 .grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
+    /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: center;
     padding: 20px;
     font-size: 30px;
@@ -124,12 +130,14 @@ img {
 }
 
 #logo {
-    width: 50%;
-    height: 21rem;
+    width: 13rem;
+    height: 6rem;
 }
 
 .header {
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
     z-index: 1;
     width: 94%;
     /* box-shadow: 2px 5px #888888; */
@@ -138,13 +146,24 @@ img {
 .sticky {
     position: fixed;
     top: 0;
-    width: 94%;
+    /* width: 94%; */
+    border-bottom: 2px solid green;
 }
 
 .nav {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav li {
+    margin-top: 2rem;
+}
+
+.nav li img {
+    margin-top: -2rem;
 }
 
 .about,
@@ -167,9 +186,6 @@ img {
 
 .story-text {
     grid-area: story-text;
-    text-align: justify;
-    font-size: 25px;
-    margin: 4rem;
 }
 
 .story-img {
