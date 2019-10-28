@@ -359,4 +359,7 @@ a>i {
     li {
         margin-right: 1rem;
     }
+    .footer {
+        padding: 0;
+    }
 }
