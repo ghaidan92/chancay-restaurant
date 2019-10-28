@@ -333,3 +333,9 @@ li>a {
 a>i {
     color: green;
 }
+
+@media only screen and (max-width: 600px) {
+    #li {
+        display: none;
+    }
+}
