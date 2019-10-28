@@ -253,7 +253,7 @@ li>a {
 .location {
     grid-area: location;
     display: grid;
-    grid-template-areas: 'loc loc add add' 'map map reservation reservation' 'address address reservation reservation';
+    grid-template-areas: 'loc loc add add' 'map map reservation reservation' 'address address address address';
     grid-gap: 20px;
     padding: 5px 10px;
 }
@@ -262,8 +262,7 @@ li>a {
     background-color: transparent;
     color: #444;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    width: 25%;
     border: none;
     text-align: left;
     outline: none;
@@ -280,7 +279,6 @@ li>a {
 .panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
     overflow: hidden;
 }
 
@@ -317,7 +315,7 @@ li>a {
 
 .reservation {
     grid-area: reservation;
-    background-image: url('./images/event-management.jpg');
+    background-image: url('./images/coming-soon.jpg');
     background-size: cover;
 }
 
