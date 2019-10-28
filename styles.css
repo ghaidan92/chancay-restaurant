@@ -149,7 +149,6 @@ li>a {
 .sticky {
     position: fixed;
     top: 0;
-    /* width: 94%; */
     border-bottom: 2px solid green;
 }
 
@@ -340,5 +339,24 @@ a>i {
     }
     .story-text {
         font-size: 15px;
+    }
+    /* 'loc loc add add' 'map map reservation reservation' 'address address address address'; */
+    .location {
+        grid-template-areas: 'loc loc loc loc' 'map map map map' 'address address address address' 'add add add add' 'reservation reservation reservation reservation';
+    }
+    .reservation {
+        height: 14rem;
+    }
+    #logo {
+        /* margin-right: 2rem; */
+    }
+    .slideshow-container {
+        width: 111%;
+    }
+    .sticky {
+        width: 97%;
+    }
+    li {
+        margin-right: 1rem;
     }
 }
