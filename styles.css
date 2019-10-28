@@ -338,4 +338,7 @@ a>i {
     #li {
         display: none;
     }
+    .story-text {
+        font-size: 15px;
+    }
 }
