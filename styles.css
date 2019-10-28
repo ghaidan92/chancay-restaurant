@@ -119,10 +119,8 @@ img {
 }
 
 .grid-container>div {
-    /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: center;
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
 }
 
 .main-header {
@@ -176,24 +174,32 @@ img {
 
 .about {
     grid-area: about;
+    font-size: 30px;
 }
 
 .story {
     display: grid;
-    grid-template-areas: 'story-text story-img story-img story-img';
+    grid-template-areas: 'story-text story-text story-text story-text';
     grid-gap: 25px;
 }
 
 .story-text {
     grid-area: story-text;
+    margin: 0;
+    text-align: initial;
+    font-size: 30px;
 }
 
-.story-img {
+
+/* .story-img {
     grid-area: story-img
-}
+} */
 
-.story>img {
+.story-text>img {
     float: right;
+    margin: 0 10px;
+    width: 55%;
+    height: 55%;
 }
 
 
@@ -253,9 +259,17 @@ img {
 
 .lo {
     display: grid;
-    grid-template-areas: 'loc loc loc add' 'map map map reservation' 'address address address reservation';
+    grid-template-areas: 'loc loc add add' 'map map reservation reservation' 'address address reservation reservation';
     grid-gap: 20px;
     padding: 5px 10px;
+}
+
+.icons {
+    float: left;
+}
+
+.icon-add {
+    margin-top: -.7rem;
 }
 
 #map {
@@ -269,6 +283,8 @@ img {
 
 .address {
     grid-area: address;
+    text-align: start;
+    font-size: 1rem;
 }
 
 .reservation {
@@ -282,4 +298,6 @@ img {
 
 .footer {
     grid-area: footer;
+    padding: 2rem;
+    font-size: 1rem;
 }
