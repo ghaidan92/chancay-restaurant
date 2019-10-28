@@ -21,11 +21,11 @@
 
             <div class="header" id="myHeader">
                 <ul class="nav">
-                    <li>Home</li>
-                    <li>Menu</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><img id="logo" src="./images/FacebookCover.png" alt="logo"></li>
-                    <li>Reservation</li>
-                    <li>Location</li>
+                    <li><a href="https://www.opentable.com/new-world-cafe?ref=1068" target="_blank">Reservation</a></li>
+                    <li><a href="#location">Location</a></li>
                 </ul>
             </div>
             <div class="slideshow-container">
@@ -64,7 +64,7 @@
                 <!-- <div class="story-img"> </div> -->
             </div>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <button class="tablink" onclick="openPage('Dinner', this)">Dinner</button>
             <button class="tablink" onclick="openPage('Lunch', this)" id="defaultOpen">Lunch</button>
             <button class="tablink" onclick="openPage('Dessert', this)">Dessert</button>
@@ -90,20 +90,30 @@
                 <p>Who we are and what we do.</p>
             </div>
         </div>
-        <div class="location lo">
+        <div class="location" id="location">
             <div class="loc">location
                 <hr>
             </div>
             <div class="add">Friday's Event
                 <hr>
             </div>
+            <!-- <img src="./images/FNL.png" alt=""> -->
             <div class="map" id="map"></div>
             <div class="address">
-                <p>&#127968; 123 Mickey Mouse Rd <br> San Francisco, CA 91900</p>
-                <p>&#9742; 415-900-2345</p>
+                <p>&#127968; 833 Mahler Rd #10, <br> Burlingame, CA 94010</p>
+                <p>&#9742; (650) 239-9750</p>
+                <!-- <button class="accordion"> Hours:</button>
+                <div class="panel">
+                    <p>Monday - Closed <br> Tuesday - 8:00AM-8:00PM <br> Wednesday - 8:00AM-8:00PM <br> Thursday - 8:00AM-8:00PM <br> Friday - 8:00AM-8:00PM <br> Saturday - 8:00AM-8:00PM <br> Sunday - 8:00AM-8:00PM
+                    </p>
+                </div> -->
+                <!-- <p>Hours: <br> Monday - Closed <br> Tuesday - 8:00AM-8:00PM <br> Wednesday - 8:00AM-8:00PM <br> Thursday
+                    - 8:00AM-8:00PM <br> Friday - 8:00AM-8:00PM <br> Saturday - 8:00AM-8:00PM <br> Sunday -
+                    8:00AM-8:00PM</p> -->
             </div>
             <div class="reservation">
-                <img src="./images/FNL.png" alt="">
+
+
                 <!-- <form class="form" action="#">
                     Full name: <input type="text" name="fullname" placeholder="John Smith" required>
                     <br> E-mail address: <input type="text" name="email" placeholder="youremail@email.com" required>

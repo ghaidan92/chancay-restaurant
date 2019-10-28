@@ -12,7 +12,12 @@ body {
     padding: 10px;
 }
 
-img {
+li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fade>img {
     vertical-align: middle;
     height: 30rem;
 }
@@ -247,6 +252,36 @@ img {
 
 .location {
     grid-area: location;
+    display: grid;
+    grid-template-areas: 'loc loc add add' 'map map reservation reservation' 'address address reservation reservation';
+    grid-gap: 20px;
+    padding: 5px 10px;
+}
+
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+/* .active,
+.accordion:hover {
+    background-color: #ccc;
+} */
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }
 
 .loc {
@@ -255,13 +290,6 @@ img {
 
 .add {
     grid-area: add
-}
-
-.lo {
-    display: grid;
-    grid-template-areas: 'loc loc add add' 'map map reservation reservation' 'address address reservation reservation';
-    grid-gap: 20px;
-    padding: 5px 10px;
 }
 
 .icons {
@@ -289,6 +317,8 @@ img {
 
 .reservation {
     grid-area: reservation;
+    background-image: url('./images/event-management.jpg');
+    background-size: cover;
 }
 
 .form {
@@ -300,4 +330,8 @@ img {
     grid-area: footer;
     padding: 2rem;
     font-size: 1rem;
+}
+
+a>i {
+    color: green;
 }
