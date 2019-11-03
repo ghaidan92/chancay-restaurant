@@ -22,8 +22,12 @@ function scrollFunction() {
         // document.getElementById("nav").style.padding = "30px 10px";
         document.getElementById("logo").style.width = "14rem";
         document.getElementById("logo").style.height = "8rem";
-        document.getElementById("li").style.fontSize = "1rem";
-        document.getElementById("li").style.marginTop = "4.2rem";
+        document.getElementById("logo").style.marginTop = "0rem";
+        document.querySelector(".list").style.fontSize = "1rem";
+        document.querySelector(".list").style.marginTop = "4.2rem";
+        document.querySelector(".list2").style.marginTop = "4.2rem";
+        document.querySelector(".list3").style.marginTop = "4.2rem";
+        document.querySelector(".list4").style.marginTop = "4.2rem";
     }
 }
 

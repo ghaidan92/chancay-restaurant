@@ -161,12 +161,15 @@ li>a {
     font-size: 1rem;
 }
 
-.nav li {
-    margin-top: 2rem;
+.list,
+.list2,
+.list3,
+.list4 {
+    margin-top: 8rem;
 }
 
 .nav li img {
-    margin-top: -2rem;
+    margin-top: 2rem;
 }
 
 .about,
@@ -191,8 +194,8 @@ li>a {
 .story-text {
     grid-area: story-text;
     margin: 0;
-    text-align: initial;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 
@@ -335,17 +338,16 @@ a>i {
 }
 
 .mySlides>img {
-    /* max-width: 100%;
-    height: auto; */
-    width: 100%;
-}
-
-#li {
-    margin-top: 8rem;
+    max-width: 100%;
+    max-height: auto;
+    /* width: 100%; */
 }
 
 @media only screen and (max-width: 600px) {
-    #li {
+    .list,
+    .list2,
+    .list3,
+    .list4 {
         display: none;
     }
     .story-text {
@@ -372,5 +374,12 @@ a>i {
     }
     .footer {
         padding: 0;
+    }
+    .about,
+    .menu,
+    .location,
+    .reservation,
+    .footer {
+        margin-left: 2rem;
     }
 }
