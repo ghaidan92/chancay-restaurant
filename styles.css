@@ -364,7 +364,7 @@ a>i {
     }
     .list,
     .list2,
-    .list3,
+    /* .list3, */
     .list4 {
         display: none;
     }
