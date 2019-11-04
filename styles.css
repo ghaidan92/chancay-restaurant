@@ -356,6 +356,9 @@ a>i {
 }
 
 @media only screen and (max-width: 600px) {
+    .tablink {
+        font-size: 10px;
+    }
     .list,
     .list2,
     .list3,
