@@ -18,7 +18,7 @@ function myFunction() {
 // window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         // document.getElementById("nav").style.padding = "30px 10px";
         document.getElementById("logo").style.width = "14rem";
         document.getElementById("logo").style.height = "8rem";
@@ -28,6 +28,14 @@ function scrollFunction() {
         document.querySelector(".list2").style.marginTop = "4.2rem";
         document.querySelector(".list3").style.marginTop = "4.2rem";
         document.querySelector(".list4").style.marginTop = "4.2rem";
+    } else {
+        document.getElementById("logo").style.width = "29rem";
+        document.getElementById("logo").style.height = "15rem";
+        document.querySelector(".list").style.fontSize = "1rem";
+        document.querySelector(".list").style.marginTop = "8rem";
+        document.querySelector(".list2").style.marginTop = "8rem";
+        document.querySelector(".list3").style.marginTop = "8rem";
+        document.querySelector(".list4").style.marginTop = "8rem";
     }
 }
 
