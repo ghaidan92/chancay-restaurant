@@ -362,7 +362,7 @@ a>i {
 
 @media only screen and (max-width: 600px) {
     #fne>a>img {
-        width: 85%;
+        width: 55%;
     }
     .tablink {
         font-size: 10px;
