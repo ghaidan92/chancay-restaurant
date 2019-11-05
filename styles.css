@@ -356,14 +356,14 @@ a>i {
 }
 
 .tabcontent>img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
 @media only screen and (max-width: 600px) {
     .tabcontent>img {
         max-width: 135%;
-        margin-left: -3rem;
+        margin-left: -2.5rem;
     }
     #fne>a>img {
         width: 55%;
