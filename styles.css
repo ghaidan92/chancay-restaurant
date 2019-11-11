@@ -320,12 +320,17 @@ li>a {
     font-size: 1rem;
 }
 
+.address>p>a {
+    text-decoration: none;
+    color: rgb(140, 174, 112);
+}
+
 .reservation {
     grid-area: reservation;
 }
 
 #fne>a>img {
-    width: 55%;
+    width: 85%;
 }
 
 .form {
@@ -358,9 +363,6 @@ a>i {
     .tabcontent>img {
         max-width: 135%;
         margin-left: -2.5rem;
-    }
-    #fne>a>img {
-        width: 55%;
     }
     .tablink {
         font-size: 10px;
