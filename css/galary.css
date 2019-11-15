@@ -1,3 +1,52 @@
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+    width: 29rem;
+    height: 15rem;
+}
+
+.header {
+    /* background-color: #DCDCDC; */
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    z-index: 1;
+    width: 100%;
+    /* box-shadow: 2px 5px #888888; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid rgb(140, 174, 112);
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.list,
+.list2,
+.list3,
+.list4 {
+    margin-top: 8rem;
+}
+
+.nav li img {
+    margin-top: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
 div.gallery {
     border: 1px solid #ccc;
 }
@@ -21,7 +70,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
+    padding: 20px 6px;
     float: left;
     width: 24.99999%;
 }
