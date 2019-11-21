@@ -28,6 +28,8 @@ function scrollFunction() {
         document.querySelector(".list2").style.marginTop = "4.2rem";
         document.querySelector(".list3").style.marginTop = "4.2rem";
         document.querySelector(".list4").style.marginTop = "4.2rem";
+        document.querySelector(".list5").style.marginTop = "4.2rem";
+        document.querySelector(".list0").style.marginTop = "4.2rem";
     } else {
         document.getElementById("logo").style.width = "29rem";
         document.getElementById("logo").style.height = "15rem";
@@ -36,6 +38,8 @@ function scrollFunction() {
         document.querySelector(".list2").style.marginTop = "8rem";
         document.querySelector(".list3").style.marginTop = "8rem";
         document.querySelector(".list4").style.marginTop = "8rem";
+        document.querySelector(".list5").style.marginTop = "8rem";
+        document.querySelector(".list0").style.marginTop = "8rem";
     }
 }
 

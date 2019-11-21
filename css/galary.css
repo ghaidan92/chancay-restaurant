@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    font-family: Arial;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
-    font-family: 'Raleway', sans-serif;
 }
 
 #logo {
@@ -37,64 +42,92 @@ body {
 .list3,
 .list4 {
     margin-top: 8rem;
+    text-decoration: none;
+}
+
+li>a {
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+li>a:hover {
+    background-color: gray;
+    padding: 1rem;
 }
 
 .nav li img {
     margin-top: 2rem;
 }
 
-h2 {
-    text-align: center;
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-div.gallery {
-    border: 1px solid #ccc;
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
+.column img {
+    margin: 6px auto;
+    vertical-align: middle;
     width: 100%;
-    height: auto;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.column img:hover {
+    border: 2px solid rgb(140, 174, 112);
 }
 
-* {
-    box-sizing: border-box;
-}
 
-.responsive {
-    padding: 20px 6px;
-    float: left;
-    width: 24.99999%;
-}
+/* Responsive layout - makes a two column-layout instead of four columns */
 
-img {
-    width: "600";
-    height: "400";
-}
-
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .list,
+    .list2,
+    .list3,
+    .list4 {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .list,
+    .list2,
+    .list3,
+    .list4 {
+        display: none;
     }
 }
 
-.clearfix:after {
+
+/* .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
