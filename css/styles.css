@@ -332,7 +332,8 @@ li>a {
 }
 
 #fne>a>img {
-    width: 85%;
+    width: 45%;
+    cursor: pointer;
 }
 
 .form {
