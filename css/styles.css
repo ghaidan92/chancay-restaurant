@@ -200,12 +200,18 @@ li>a {
     font-size: 15px;
 }
 
+.bio {
+    margin-top: 20rem;
+    font-family: 'Bad Script';
+    font-size: 3rem;
+}
+
 
 /* .story-img {
     grid-area: story-img
 } */
 
-.story-text>img {
+.story-text>p>img {
     float: right;
     margin: 0 10px;
     width: 55%;
